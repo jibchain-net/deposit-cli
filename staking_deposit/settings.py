@@ -16,6 +16,7 @@ PRATER = 'prater'
 SEPOLIA = 'sepolia'
 ZHEJIANG = 'zhejiang'
 HOLESKY = 'holesky'
+JBC = 'jib'
 
 # Mainnet setting
 MainnetSetting = BaseChainSetting(
@@ -37,6 +38,10 @@ ZhejiangSetting = BaseChainSetting(
 HoleskySetting = BaseChainSetting(
     NETWORK_NAME=HOLESKY, GENESIS_FORK_VERSION=bytes.fromhex('01017000'),
     GENESIS_VALIDATORS_ROOT=bytes.fromhex('9143aa7c615a7f7115e2b6aac319c03529df8242ae705fba9df39b79c59fa8b1'))
+#JBC setting
+JBCSetting = BaseChainSetting(
+    NETWORK_NAME=JBC, GENESIS_FORK_VERSION=bytes.fromhex('10008899'),
+    GENESIS_VALIDATORS_ROOT=bytes.fromhex('f064b1ed0be9f0284d21688ebafc2daf81630abc699188d106d26ab080cae864'))
 
 
 ALL_CHAINS: Dict[str, BaseChainSetting] = {
@@ -46,6 +51,7 @@ ALL_CHAINS: Dict[str, BaseChainSetting] = {
     SEPOLIA: SepoliaSetting,
     ZHEJIANG: ZhejiangSetting,
     HOLESKY: HoleskySetting,
+    JBC: JBCSetting,
 }
 
 
