@@ -16,7 +16,7 @@ PRATER = 'prater'
 SEPOLIA = 'sepolia'
 ZHEJIANG = 'zhejiang'
 HOLESKY = 'holesky'
-JBC = 'jib'
+JBC = 'jbc'
 
 # Mainnet setting
 MainnetSetting = BaseChainSetting(
